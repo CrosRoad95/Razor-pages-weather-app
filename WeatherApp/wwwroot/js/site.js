@@ -95,13 +95,13 @@
     });
 }
 
-autocomplete(document.getElementById("country"), countries);
+autocomplete(document.getElementById("city"), countries);
 
 
 document.getElementById("weatherForm").addEventListener("submit", async (e) => {
     e.preventDefault(); // stop page navigation
 
-    let value = document.getElementById("country").value;
+    let value = document.getElementById("city").value;
 
     if (value == "")
         return;

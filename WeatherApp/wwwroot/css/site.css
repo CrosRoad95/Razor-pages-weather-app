@@ -34,7 +34,7 @@ body {
     display: flex;
 }
 
-#countryautocomplete-list {
+#cityautocomplete-list {
     position: absolute;
     cursor: pointer;
     background: white;
