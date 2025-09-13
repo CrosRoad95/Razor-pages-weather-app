@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Search with Lazy Loading";
+}
+<form id="weatherForm" autocomplete="off">
+    <div class="autocomplete" style="width:300px;">
+        <input id="country" type="text" name="myCountry" placeholder="Country">
+    </div>
+    <input type="submit" value="Search">
+</form>
+
+<div id="results" style="display:none;"></div>
+<div id="loading" style="display:none;">Loading... 🐈🐈🐈</div>
+
+<script>
+    const countries = [@Html.Raw(ViewData["Cities"])];
+</script>
